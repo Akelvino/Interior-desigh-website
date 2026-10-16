@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link href="./assets/styles/output.css" rel="stylesheet">
+</head>
+<body class="bg-accent2/20">
+
+  <header class="max-w-[1440px] mx-auto bg-page  py-10 ">
+    <nav class="container mx-auto flex  justify-between items-center h-16">
+      <div>
+        <img src="./assets/img/logo.svg" alt="">
+      </div>
+      <div id="nav-menu" class="flex flex-col items-center lg:flex-row lg:static lg:min-h-fit overflow-hidden lg:w-auto bg-white lg:bg-transparent absolute right-0 bottom-0 w-[330px] h-full justify-center  gap-12 shadow-2xl lg:shadow-none translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out z-50">
+        <ul class="flex flex-col lg:flex-row gap-12 lg:mr-25">
+          <ol><a class="nav-link" href="">Home</a></ol>
+          <ol><a class="nav-link" href="">About</a></ol>
+          <ol><a class="nav-link" href="">Service</a></ol>
+          <ol><a class="nav-link" href="">Project</a></ol>
+          <ol><a class="nav-link" href="">Feedback</a></ol>
+        </ul>
+        <div>
+          <button class="btn btn-sm btn-accent-2">Contact us</button>
+          <div class="lg:hidden absolute top-5 left-3 rounded-full bg-accent2 cursor-pointer overflow-hidden" id="close-hambug"><i class="ri-close-line text-2xl text-white"></i></div>
+        </div>
+      </div>
+      <div class="lg:hidden cursor-pointer" id="open-hambug">
+        <i class="ri-menu-4-line text-3xl"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="relative bg-yellow-100 py-24 lg:py-0 flex items-center lg:h-[800px] container mx-auto">
+    <div class="container mx-auto absolute top-0 left-0 z-10 bg-accent1 w-full lg:w-3/4 h-full lg:rounded-tr-[500px]">
+    </div>
+    <div class=" relative z-40 w-full max-w-[1158px] mx-auto h-full lg:border-l border-primary/30 flex items-center before:content-[''] before:absolute before:left-[270px] before:top-0 before:h-full lg:before:border-l lg:before:border-primary/30 before:z-1">
+      <div class="z-40 flex mx-auto lg:mx-0 text-center lg:text-left">
+        <div class="w-full max-w-[600px] lg:max-w-[720px] px-4 lg:px-0">
+           <h1 class="hero__title mb-8">Mordern Interior Design Services</h1>
+           <p class="hero__subtitle max-w-[480px] mx-auto lg:mx-0 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt laudantium eaque enim saepe aut dolores expedita illum soluta asperiores?</p>
+           <div class="flex lg:absolute justify-center lg:justify-start gap-16">
+            <div class="hero__image hidden lg:flex w-[270px] h-[478px] bg-gray-200 rounded-full">
+              <img src="./assets/img/hero/img1.png" alt="">
+            </div>
+            <div class="hero__btn flex w-full justify-center lg:justify-start">
+            <button class=" btn btn-lg btn-accent-2 flex items-center justify-center gap-3 !px-6">
+              <span>Explore now</span>
+              <i class="ri-arrow-right-long-line"></i>
+            </button>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute right-0 hidden lg:flex z-20">
+      <div class="hero_main_image w-[780px] h-[600px] rounded-bl-[400px] relative z-20 overflow-hidden">
+        <img src="./assets/img/hero/hero-img.jpg" alt="">
+      </div>
+      <div class="border border-primary/30 w-[820px] h-[600px] absolute -left-10 z-10 top-10 rounded-bl-[400px]"></div>
+    </div>
+    <div class="border hidden lg:block border-b-primary/30 absolute z-1- right-0 w-[1170px]"></div>
+  </section>
+
+  <section id="about" class="relative min-h-auto lg:h-[614px] border-b border-primary/30">
+    <div class="container mx-auto lg:border-x h-full border-primary/30">
+      <div class="about__image w-[270px] h-[418px] rounded-b-full hidden lg:flex absolute left-[32%]">
+        <img src="./assets/img/about/img1.png" alt="">
+      </div>
+      <div class="flex gap-4 h-full justify-center">
+        <div class="flex-1 relative hidden lg:block">
+          <div class="featured__image2 w-[132px] h-[206px] absolute left-[164px] bottom-0">
+            <img src="./assets/img/about/img2.png" alt="">
+          </div>
+          <div class="scroll_down_image w-[132px] h-[20opx] absolute bottom-[60px] -left-[65px]">
+            <img src="./assets/img/about/scroll-down.svg" alt="">
+          </div>
+        </div>
+        <div class="flex-1 p-12 flex items-center justify-center gap-12">
+          <div class="flex flex-col items-center">
+            <div class="stats flex mb-12 gap-16">
+              <div class="flex flex-col gap-2">
+                <div class="text-5xl lg:flex-[72px] font-extrabold leading-none">24</div>
+                <p class="max-w-[100px] text-[20px] leading-6">Year of experience</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="text-5xl lg:flex-[72px] font-extrabold leading-none">162</div>
+                <p class="max-w-[100px] text-[20px] leading-6">Projects Completed</p>
+              </div>
+            </div>
+            <div class="about__form">
+              <h4 class="mb-8 text-center">Design your dream home.</h4>
+              <form class=" flex flex-col lg:flex-row min-h-[135px] lg:min-h-auto gap-4 lg:gap-0 drop-shadow-xl drop-shadow-primary/10">
+                <input class="bg-white w-full h-[60px] flex-1 outline-none pl-6" type="email" placeholder="Your email address">
+                <button class="btn btn-lg btn-primary w-full lg:w-auto"> Let's Chat</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services border border-primary/30">
+    <div class="container mx-auto lg:border-x border-primary/30 pt-[100px] pb-[50px]">
+      <h2 class="service__title max-w-[460px] mb-12 lg:mb-[90px] text-center lg:text-left mx-auto lg:mx-0">Create your Dream Space.</h2>
+      <div class="flex flex-col lg:flex-row items-center lg:items-start">
+        <div class="service__items flex-1 px-[60px] py-[48px] h-[440px] w-full max-w-[480px] xl:max-w-max text-center xl:text-left">
+          <div class="w-[110px] h-[110px] mb-11 mx-auto lg:mx-0">
+            <img src="./assets/img/services/icon-1.svg" alt="">
+          </div>
+          <h4 class="text-3xl font-medium mb-4">Smooth Workflow</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquid.</p>
+        </div>
+        <div class="service__items flex-1  px-[60px] py-[48px] h-[440px] w-full max-w-[480px] xl:max-w-max text-center xl:text-left">
+          <div class="w-[110px] h-[110px] mb-11 mx-auto lg:mx-0">
+            <img src="./assets/img/services/icon-2.svg" alt="">
+          </div>
+          <h4 class="text-3xl font-medium mb-4">Professionalism</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquid.</p>
+        </div>
+        <div class="service__items flex-1 px-[60px] py-[48px] h-[440px] w-full max-w-[480px] xl:max-w-max text-center xl:text-left">
+          <div class="w-[110px] h-[110px] mb-11 mx-auto lg:mx-0">
+            <img src="./assets/img/services/icon-3.svg" alt="">
+          </div>
+          <h4 class="text-3xl font-medium mb-4">Trusted Platform</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquid.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-secondary relative lg:h-[1380px] border-b border-primary/30">
+    <div class="container mx-auto h-full lg:border-x border-primary/30 relative z-40">
+      <div class="service-secondary-title pt-[100px] flex justify-end">
+        <h2 class="max-w-[600px] mx-auto lg:mx-0 text-center lg:text-right">Providing innovative interrior Design.</h2>
+      </div>
+    </div>
+    <div class="hidden lg:flex absolute left-0 w-full top-[480px]">
+      <div class="service-secondary-img1 w-full max-w-[640px] absolute -top-[120px] left-0">
+        <img src="./assets/img/services/s1.png" alt="">
+      </div>
+      <div class="service-secondary-img2 w-[1035px] h-[899px] bg-page border-t border-primary/30 absolute top-0 right-0 pl-[30px] pt-[30px]">
+        <div class="w-[870px] h-[870px] absolute top-[30px] z-10 border-l border-r-primary/30">
+          <div class="service-secondary-img1 w-[870px] h-[470px] rounded-br-[370px] overflow-hidden bg-pink-300"><img class="w-full h-[470px]" src="./assets/img/services/2.jpg" alt=""></div>
+        </div>
+        <div class="bg-accent1 w-[970px] h-[557px] absolute bottom-[30px] right-0 rounded-tr-[370px] flex flex-col justify-end pb-12">
+          <div class="py-12 ml-20 max-w-[660px] relative z-40 mb-10 text-xl leading-relaxed italic">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, veniam maiores! Illum iure pariatur aut iusto distinctio adipisci commodi facilis nobis corporis est temporibus autem, accusamus consequuntur earum magnam. Mollitia consectetur fuga sequi numquam magni, autem dolores quibusdam voluptatibus alias natus a, ex unde ipsam reprehenderit recusandae nisi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-accent1 w-full h-[400px] lg:hidden">
+      <div class="container mx-auto flex items-center h-full">
+        <div class="py-12 max-w-[680px] mx-auto relative z-40 flex flex-col justify-center items-center">
+          <p class="mb-10 text-lg leading-relaxed text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ullam voluptates provident voluptatibus sit modi doloremque blanditiis aspernatur quisquam eos rem itaque optio debitis ab eum aut mollitia omnis perferendis sint quas magnam ipsa porro officiis.</p>
+
+          <div class="flex items-center justify-between px-10">
+            <button class="btn btn-lg btn-accent-2">About Us</button>
+            <!-- <img class="hidden lg:flex" src="./assets/img/arrow-right.svg" alt=""> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-tertiary lg:border-b border-primary/30 ">
+    <div class="container mx-auto lg:border-x border-primary/30 z-40">
+      <div class="service__title max-w-[600px] pt-24 mx-auto lg:mx-0 mb-20">
+        <h2 class="text-center lg:text-left">We will make Unique Design for You</h2>
+      </div>
+      <div class="service__images flex flex-col lg:flex-row gap-[30px] items-center">
+        <div class="flex">
+          <img src="./assets/img/services/s1.png" alt="">
+        </div>
+        <div class="flex">
+          <img src="./assets/img/services/s2.png" alt="">
+        </div>
+      </div>
+      <p class="service__p hidden lg:flex text-xl lg:py-[80px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat magni aspernatur adipisci id fugiat vero architecto. Doloribus blanditiis totam iusto. Reiciendis hic aspernatur quam repellat necessitatibus perferendis optio atque laboriosam!</p>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container mx-auto lg:border-x border-primary/30">
+      <h2 class="projects__title text-center lg:text-right pt-24 !mb-0 pb-[90px]">Amazing Prjects from <br> Talented Interior Architect!</h2>
+      <div class="swiper mySwiper h-[640px] lg:h-[870px]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide lg:h-full flex relative">
+            <div class="bg-accent2/10 h-full lg:h-[670px]">
+              <img src="./assets/img/projects/slide-1.jpg" class="w-full object-contain lg:h-full lg:object-cover" alt="">
+            </div>
+            <div class="bg-accent1 h-[400px] md:h-[300px] lg:h-[200px] lg:rounded-bl-[300px] flex items-center absolute bottom-0 w-full">
+              <div class="mx-auto flex flex-col lg:flex-row lg:gap-16 items-center px-8 lg:px-0">
+                <p class="text-center text-lg lg:text-left max-w-[600px] mb-8 lg:mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est inventore repellat fugit cupiditate quis temporibus veritatis architecto delectus fugiat.</p>
+                <button class="btn btn-lg btn-accent-2 flex items-center gap-3">
+                  <span>Explore Now</span>
+                  <i class="ri-arrow-right-long-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide lg:h-full flex relative">
+            <div class="bg-accent2/10 h-full lg:h-[670px]">
+              <img src="./assets/img/projects/slide-1.jpg" class="w-full object-contain lg:h-full lg:object-cover" alt="">
+            </div>
+            <div class="bg-accent1 h-[400px] md:h-[300px] lg:h-[200px] lg:rounded-bl-[300px] flex items-center absolute bottom-0 w-full">
+              <div class="mx-auto flex flex-col lg:flex-row lg:gap-16 items-center px-8 lg:px-0">
+                <p class="text-center text-lg lg:text-left max-w-[600px] mb-8 lg:mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est inventore repellat fugit cupiditate quis temporibus veritatis architecto delectus fugiat.</p>
+                <button class="btn btn-lg btn-accent-2 flex items-center gap-3">
+                  <span>Explore Now</span>
+                  <i class="ri-arrow-right-long-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next lg:mr-4"></div>
+        <div class="swiper-button-prev lg:mr-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials lg:h-[870px]">
+    <div class="container mx-auto lg:border-x border-primary/30 pt-32">
+      <div class="flex items-center justify-between lg:mb-12">
+        <h2 class="testimonials__title text-center lg:text-left mx-auto lg:mx-0 !mb-0">Our Custormer <br> Feedback</h2>
+        <div class="hidden lg:flex">
+          <img src="./assets/img/testimonials/quotes.svg" alt="">
+        </div>
+      </div>
+      <div class="swiper mySwiper h-[420px] lg:h-[540px]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide h-full">
+            <div class="flex items-center justify-center h-full">
+              <div class="flex-1 hidden lg:flex">
+                <img src="./assets/img/testimonials/avatar-img-1.png" alt="">
+              </div>
+              <div class="w-full max-w-[815px] px-6 flex flex-col gap-8 lg:text-left items-center lg:items-start">
+                <h4 class="text-3xl font-secondary font-medium">Nichelle Zolani</h4>
+                <p class="text-2xl italic text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto ullam commodi fugit officiis dignissimos vel corrupti libero ab quo.</p>
+                <p class="text-[22px] text-primary/70">Full Stack Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-full">
+            <div class="flex items-center justify-center h-full">
+              <div class="flex-1 hidden lg:flex">
+                <img src="./assets/img/testimonials/avatar-img-2.png" alt="">
+              </div>
+              <div class="w-full max-w-[815px] px-6 flex flex-col gap-8 lg:text-left items-center lg:items-start">
+                <h4 class="text-3xl font-secondary font-medium">Kelvin Adamba</h4>
+                <p class="text-2xl italic text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto ullam commodi fugit officiis dignissimos vel corrupti libero ab quo.</p>
+                <p class="text-[22px] text-primary/70">Front end Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact relative min-h-[700px] lg:min-h-[760px]">
+    <div class="container mx-auto lg:border-x border-primary/30 pt-[100px]">
+      <div class="bg-accent1 py-12 absolute left-0 right-0 lg:rounded-br-[370px]">
+        <div class="container mx-auto">
+          <div class="flex flex-col lg:flex-row items-center justify-center">
+            <div class="w-full text-center lg:text-left lg:max-w-[815px]">
+              <h2 class="!mb-9">Interested in <br> Working With Us</h2>
+              <p class="mb-12 text-xl max-w-[600px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci ea pariatur et ab reprehenderit dolore ex in eius, quis enim laborum quas! Libero itaque, soluta eveniet asperiores maiores doloremque.</p>
+              <button class="btn btn-lg btn-accent-2">Contact Us</button>
+            </div>
+            <div class="hidden xl:flex flex-1 justify-end">
+              <img src="./assets/img/contact/img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer relative">
+    <div class="container mx-auto pt-12 pb-24">
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-start gap-24 lg:gap-12 text-center lg: text -left">
+        <div class="lg:w-[380px]">
+          <div class="w-[290px] mb-8 mx-auto lg:mx-0">
+            <img src="./assets/img/logo.svg" class="w-full" alt="">
+          </div>
+          <p class="text-xl max-w-[700px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellendus reiciendis nostrum nulla aperiam quo nam.</p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-24 text-center lg:text-left">
+          <div class="flex-1">
+            <h5 class="font-secondary mb-12 text-xl font-medium">Company</h5>
+            <ul class="flex flex-col gap-6 text-primary/60">
+              <li><a href="">Career</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Feature</a></li>
+              <li><a href="">Story</a></li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <h5 class="font-secondary mb-12 text-xl font-medium">Design</h5>
+            <ul class="flex flex-col gap-6 text-primary/60">
+              <li><a href="">2D Design</a></li>
+              <li><a href="">3D Design</a></li>
+              <li><a href="">Collaborations</a></li>
+              <li><a href="">Tools</a></li>
+              <li><a href="">Important Links</a></li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <h5 class="font-secondary mb-12 text-xl font-medium">Links</h5>
+            <ul class="flex flex-col gap-6 text-primary/60">
+              <li><a href="">Projects</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Senf Email</a></li>
+              <li><a href="">Fiverr</a></li>
+              <li><a href="">Upwork</a></li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <h5 class="font-secondary mb-12 text-xl font-medium">Material</h5>
+            <ul class="flex flex-col gap-6 text-primary/60">
+              <li><a href="">Company Profile</a></li>
+              <li><a href="">Assets</a></li>
+              <li><a href="">Location Maps</a></li>
+              <li><a href="">Estimate Cost</a></li>
+              <li><a href="">Default Quotation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-primary/30">
+      <div class="container max-auto py-10 text-sm text-center">
+        <p>&copy; CopyRight Kelvin Adamba - All rights reserved </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="h-[300px]"></div>
+
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/scrollreveal.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
